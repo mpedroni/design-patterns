@@ -9,6 +9,11 @@ public class Main {
 
         divisor("State");
         com.codewithmosh.state.Demo.show();
+        divisor();
+
+        divisor("Iterator");
+        com.codewithmosh.iterator.Demo.show();
+        divisor();
     }
 
     static void divisor(String title) {
