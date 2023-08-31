@@ -18,6 +18,10 @@ public class Main {
         divisor("Strategy");
         com.codewithmosh.strategy.Demo.show();
         divisor();
+
+        divisor("Template Method");
+        com.codewithmosh.template.Demo.show();
+        divisor();
     }
 
     static void divisor(String title) {
