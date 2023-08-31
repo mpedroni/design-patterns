@@ -14,6 +14,10 @@ public class Main {
         divisor("Iterator");
         com.codewithmosh.iterator.Demo.show();
         divisor();
+
+        divisor("Strategy");
+        com.codewithmosh.strategy.Demo.show();
+        divisor();
     }
 
     static void divisor(String title) {
