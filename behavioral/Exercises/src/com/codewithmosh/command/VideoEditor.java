@@ -2,7 +2,7 @@ package com.codewithmosh.command;
 
 public class VideoEditor {
     private float contrast = 0.5f;
-    private String text;
+    private String text = "";
 
     public void setText(String text) {
         this.text = text;

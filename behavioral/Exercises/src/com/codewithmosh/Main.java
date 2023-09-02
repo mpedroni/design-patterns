@@ -22,6 +22,10 @@ public class Main {
         divisor("Template Method");
         com.codewithmosh.template.Demo.show();
         divisor();
+
+        divisor("Command");
+        com.codewithmosh.command.Demo.show();
+        divisor();
     }
 
     static void divisor(String title) {
