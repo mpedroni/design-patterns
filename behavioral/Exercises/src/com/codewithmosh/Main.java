@@ -26,6 +26,10 @@ public class Main {
         divisor("Command");
         com.codewithmosh.command.Demo.show();
         divisor();
+
+        divisor("Observer");
+        com.codewithmosh.observer.Demo.show();
+        divisor();
     }
 
     static void divisor(String title) {
