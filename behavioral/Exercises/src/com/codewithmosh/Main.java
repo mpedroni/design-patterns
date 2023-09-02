@@ -34,6 +34,10 @@ public class Main {
         divisor("Mediator");
         com.codewithmosh.mediator.Demo.show();
         divisor();
+
+        divisor("Chain of Responsibility");
+        com.codewithmosh.chainOfResponsibility.Demo.show();
+        divisor();
     }
 
     static void divisor(String title) {
