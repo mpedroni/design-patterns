@@ -30,6 +30,10 @@ public class Main {
         divisor("Observer");
         com.codewithmosh.observer.Demo.show();
         divisor();
+
+        divisor("Mediator");
+        com.codewithmosh.mediator.Demo.show();
+        divisor();
     }
 
     static void divisor(String title) {
