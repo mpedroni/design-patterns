@@ -38,10 +38,14 @@ public class Main {
         divisor("Chain of Responsibility");
         com.codewithmosh.chainOfResponsibility.Demo.show();
         divisor();
+
+        divisor("Visitor");
+        com.codewithmosh.visitor.Demo.show();
+        divisor();
     }
 
-    static void divisor(String title) {
-        System.out.println("-------------== " + title + " ==-------------");
+    static void divisor(String pattern) {
+        System.out.println("-------------== " + pattern + " ==-------------");
     }
 
     static void divisor() {

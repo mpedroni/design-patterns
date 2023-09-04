@@ -12,23 +12,12 @@ public class WavFile {
         wavFile.segments.add(new FormatSegment());
         wavFile.segments.add(new FactSegment());
         wavFile.segments.add(new FactSegment());
-        wavFile.segments.add(new FactSegment());
 
         return wavFile;
     }
 
-    public void reduceNoise() {
-        for (var segment : segments)
-            segment.reduceNoise();
-    }
-
-    public void addReverb() {
-        for (var segment : segments)
-            segment.addReverb();
-    }
-
-    public void normalize() {
-        for (var segment : segments)
-            segment.normalize();
+    public void apply(Filter filter) {
+        for(var segment : segments)
+            segment.apply(filter);
     }
 }
