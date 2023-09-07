@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/behavioral/Exercises/Exercises.iml" filepath="$PROJECT_DIR$/behavioral/Exercises/Exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/structural/Exercises/Exercises.iml" filepath="$PROJECT_DIR$/structural/Exercises/Exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/codewithmosh-design-patterns.iml" filepath="$PROJECT_DIR$/.idea/codewithmosh-design-patterns.iml" />
     </modules>
