@@ -5,6 +5,10 @@ public class Structural {
         divisor("Composite");
         com.codewithmosh.composite.Demo.show();
         divisor();
+
+        divisor("Adapter");
+        com.codewithmosh.adapter.Demo.show();
+        divisor();
     }
 
     static void divisor(String pattern) {
