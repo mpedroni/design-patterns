@@ -12,7 +12,7 @@ public class DbContext {
     System.out.printf("SELECT * FROM products WHERE product_id = %d \n", id);
 
     // Simulate reading a product object from a database.
-    var product = new Product(id);
+    var product = new ProductProxy(id, this);
     product.setName("Product 1");
 
     return product;

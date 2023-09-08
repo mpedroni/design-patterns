@@ -21,6 +21,10 @@ public class Structural {
         divisor("Flyweight");
         com.codewithmosh.flyweight.Demo.show();
         divisor();
+
+        divisor("Proxy");
+        com.codewithmosh.proxy.Demo.show();
+        divisor();
     }
 
     static void divisor(String pattern) {
