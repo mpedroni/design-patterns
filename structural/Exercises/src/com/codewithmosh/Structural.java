@@ -13,6 +13,10 @@ public class Structural {
         divisor("Decorator");
         com.codewithmosh.decorator.Demo.show();
         divisor();
+
+        divisor("Facade");
+        com.codewithmosh.facade.Demo.show();
+        divisor();
     }
 
     static void divisor(String pattern) {
