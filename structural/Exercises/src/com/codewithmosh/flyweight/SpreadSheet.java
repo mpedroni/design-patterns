@@ -9,10 +9,12 @@ public class SpreadSheet {
   private final String fontFamily = "Times New Roman";
   private final int fontSize = 12;
   private final boolean isBold = false;
+  private final CellConfigFactory cellConfigFactory;
 
   private Cell[][] cells = new Cell[MAX_ROWS][MAX_COLS];
 
-  public SpreadSheet() {
+  public SpreadSheet(CellConfigFactory cellConfigFactory) {
+    this.cellConfigFactory = cellConfigFactory;
     generateCells();
   }
 
@@ -26,7 +28,8 @@ public class SpreadSheet {
     ensureCellExists(row, col);
 
     var cell = cells[row][col];
-    cells[row][col].setFontFamily(fontFamily);
+    var currentConfig = cell.getConfig();
+    cells[row][col].setConfig(cellConfigFactory.get(fontFamily, currentConfig.getFontSize(), currentConfig.isBold()));
   }
 
   private void ensureCellExists(int row, int col) {
@@ -40,8 +43,7 @@ public class SpreadSheet {
   private void generateCells() {
     for (var row = 0; row < MAX_ROWS; row++)
       for (var col = 0; col < MAX_COLS; col++) {
-        var cell = new Cell(row, col);
-        cell.setFontFamily(fontFamily);
+        var cell = new Cell(row, col, cellConfigFactory.get(fontFamily, fontSize, isBold));
         cells[row][col] = cell;
       }
   }

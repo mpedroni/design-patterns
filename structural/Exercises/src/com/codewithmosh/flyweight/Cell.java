@@ -4,13 +4,20 @@ public class Cell {
   private final int row;
   private final int column;
   private String content;
-  private String fontFamily;
-  private int fontSize;
-  private boolean isBold;
+  private CellConfig config;
 
-  public Cell(int row, int column) {
+  public CellConfig getConfig() {
+    return config;
+  }
+
+  public void setConfig(CellConfig config) {
+    this.config = config;
+  }
+
+  public Cell(int row, int column, CellConfig config) {
     this.row = row;
     this.column = column;
+    this.config = config;
   }
 
   public String getContent() {
@@ -21,31 +28,8 @@ public class Cell {
     this.content = content;
   }
 
-  public String getFontFamily() {
-    return fontFamily;
-  }
-
-  public void setFontFamily(String fontFamily) {
-    this.fontFamily = fontFamily;
-  }
-
-  public int getFontSize() {
-    return fontSize;
-  }
-
-  public void setFontSize(int fontSize) {
-    this.fontSize = fontSize;
-  }
-
-  public boolean isBold() {
-    return isBold;
-  }
-
-  public void setBold(boolean bold) {
-    isBold = bold;
-  }
 
   public void render() {
-    System.out.printf("(%d, %d): %s [%s]\n", row, column, content, fontFamily);
+    System.out.printf("(%d, %d): %s [%s]\n", row, column, content, config.getFontFamily());
   }
 }

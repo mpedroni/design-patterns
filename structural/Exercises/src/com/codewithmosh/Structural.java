@@ -17,6 +17,10 @@ public class Structural {
         divisor("Facade");
         com.codewithmosh.facade.Demo.show();
         divisor();
+
+        divisor("Flyweight");
+        com.codewithmosh.flyweight.Demo.show();
+        divisor();
     }
 
     static void divisor(String pattern) {
