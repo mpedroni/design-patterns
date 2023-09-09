@@ -12,6 +12,10 @@ public class Creational {
         divisor("Singleton");
         com.codewithmosh.singleton.Demo.show();
         divisor();
+
+        divisor("Factory Method");
+        com.codewithmosh.factory.Demo.show();
+        divisor();
     }
 
     static void divisor(String pattern) {
