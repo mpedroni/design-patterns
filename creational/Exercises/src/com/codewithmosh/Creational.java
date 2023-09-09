@@ -8,6 +8,10 @@ public class Creational {
         divisor("Prototype");
         com.codewithmosh.prototype.Demo.show();
         divisor();
+
+        divisor("Singleton");
+        com.codewithmosh.singleton.Demo.show();
+        divisor();
     }
 
     static void divisor(String pattern) {
