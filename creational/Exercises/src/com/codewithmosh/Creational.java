@@ -20,6 +20,10 @@ public class Creational {
         divisor("Abstract Factory");
         com.codewithmosh.abstractFactory.Demo.show();
         divisor();
+
+        divisor("Builder");
+        com.codewithmosh.builder.Demo.show();
+        divisor();
     }
 
     static void divisor(String pattern) {

@@ -8,9 +8,9 @@ public class Demo {
         document.add(new Text("Hello World"));
         document.add(new Image("pic1.jpg"));
 
-        document.export(ExportFormat.HTML, "export.html");
+        document.export(new HtmlDocumentBuilder(), "export.html");
 
         // Only writes the text elements to the file
-        document.export(ExportFormat.TEXT, "export.txt");
+        document.export(new TextDocumentBuilder(), "export.txt");
     }
 }
